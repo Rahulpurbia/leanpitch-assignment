@@ -1,0 +1,14 @@
+.projection-screen {
+    height: 100%;
+    width: 100%;
+    border: 7px solid yellow;
+}
+
+.projection-wrapper {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 30%;
+    display: none;
+}

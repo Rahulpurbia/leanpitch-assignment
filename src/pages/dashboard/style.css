@@ -1,0 +1,44 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXVkaXRvcml1bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+}
+
+.menu-bar {
+    height: 80%;
+    width: 30%;
+    position: relative;
+}
+
+.menu-bar>ul {
+    height: 100%;
+    color: white;
+    list-style: none;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.menu-bar>ul>li {
+    line-height: 53px;
+}
+
+.menu-bar ul li:hover {
+    cursor: pointer;
+    color: black;
+    background-color: yellow;
+}
+
+.menu-bar:hover {
+    width: 100%;
+}
+
+.menu-bar:hover li {
+    width: 30%;
+}
+
+.menu-bar:hover .projection-wrapper {
+    display: block;
+}
