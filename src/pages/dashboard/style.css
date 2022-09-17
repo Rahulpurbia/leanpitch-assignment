@@ -25,7 +25,8 @@
     line-height: 53px;
 }
 
-.menu-bar ul li:hover {
+.menu-bar ul li:hover,
+.hover {
     cursor: pointer;
     color: black;
     background-color: yellow;
