@@ -1,12 +1,14 @@
 import React from 'react'
 
+import CardLogo from '../../.././../../assets/card-logo.svg'
+
 import './style.css'
 
 const TrainingCard = () => {
     return (
         <div className="training-card">
             <div>
-                <img src="/assets/card-logo.svg" alt="" />
+                <img src={CardLogo} alt="" />
                 <div className="headline">Design Thinking</div>
             </div>
             <div className="darker-stripe">

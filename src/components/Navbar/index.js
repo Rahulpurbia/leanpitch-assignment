@@ -1,12 +1,14 @@
 import React from 'react'
 
+import Logo from '../../assets/logo.jpg'
+
 import './style.css'
 
 const Navbar = () => {
     return (
         <div className="navbar">
             <div className="logo">
-                <img src="/assets/logo.jpg" alt="logo" />
+                <img src={Logo} alt="logo" />
             </div>
             <div className="nav-buttons">
                 <button onClick={() => alert("Successfully subscribed")} className="subscribe-btn btn">Subscribe</button>
