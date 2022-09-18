@@ -1,0 +1,35 @@
+.navbar {
+    --navbar-height: 60px;
+    height: var(--navbar-height);
+    background-color: #323232;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 32px;
+    cursor: pointer;
+}
+
+.navbar>.logo>img {
+    height: var(--navbar-height);
+}
+
+.btn {
+    height: 100%;
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.subscribe-btn {
+    background-color: red;
+}
+
+.contact-btn {
+    background-color: transparent;
+}
