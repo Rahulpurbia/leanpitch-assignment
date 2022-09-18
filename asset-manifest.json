@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/leanpitch-assignment/static/css/main.36bd68ac.css",
+    "main.js": "/leanpitch-assignment/static/js/main.acae26ee.js",
+    "static/js/787.b979f81c.chunk.js": "/leanpitch-assignment/static/js/787.b979f81c.chunk.js",
+    "index.html": "/leanpitch-assignment/index.html",
+    "main.36bd68ac.css.map": "/leanpitch-assignment/static/css/main.36bd68ac.css.map",
+    "main.acae26ee.js.map": "/leanpitch-assignment/static/js/main.acae26ee.js.map",
+    "787.b979f81c.chunk.js.map": "/leanpitch-assignment/static/js/787.b979f81c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36bd68ac.css",
+    "static/js/main.acae26ee.js"
+  ]
+}
