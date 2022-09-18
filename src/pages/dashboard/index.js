@@ -1,8 +1,21 @@
 import { useState } from "react"
 
+import Navbar from "../../components/Navbar";
 import ProjectionScreen from "../../components/ProjectionScreen"
 
 import "./style.css"
+
+export const TRAININGS = 'trainings',
+    MEETUPS = 'meetups',
+    WEBINARS = 'webinars',
+    CONFERENCE = 'conference',
+    VIDEOS = 'videos',
+    PSS = 'pss',
+    BLOGS = 'blogs',
+    PODCASTS = 'podcasts',
+    BAS = 'bas',
+    BAV = 'bav',
+    ABOUT = 'about';
 
 const Dashboard = () => {
     const [hoveredListItemName, setHoveredListItemName] = useState("")
@@ -14,46 +27,49 @@ const Dashboard = () => {
     const getClass = (dataName) => dataName === hoveredListItemName ? 'hover' : ""
 
     return (
-        <div className="container">
-            <div className="menu-bar" onMouseLeave={removeElement}>
-                <ul onMouseOver={setElement} >
-                    <li data-name="trainings" className={getClass('trainings')}>
-                        Trainings
-                    </li>
-                    <li data-name='meetups' className={getClass('meetups')}>
-                        Meetups
-                    </li>
-                    <li data-name='webinars' className={getClass('webinars')}>
-                        Webinars
-                    </li>
-                    <li data-name='conference' className={getClass('conference')}>
-                        Conference
-                    </li>
-                    <li data-name='videos' className={getClass('videos')}>
-                        Videos
-                    </li>
-                    <li data-name="pss" className={getClass('pss')}>
-                        Pm Speaks Series
-                    </li>
-                    <li data-name='blogs' className={getClass('blogs')}>
-                        Blogs
-                    </li>
-                    <li data-name='podcasts' className={getClass('podcasts')}>
-                        Podcasts
-                    </li>
-                    <li data-name="bas" className={getClass('bas')}>
-                        Be A Speaker
-                    </li>
-                    <li data-name='bav' className={getClass('bav')}>
-                        Be A Volunteer
-                    </li>
-                    <li data-name='about' className={getClass('about')}>
-                        About Us
-                    </li>
-                </ul>
-                <ProjectionScreen hoveredListItem={hoveredListItemName} />
+        <>
+            <Navbar />
+            <div className="menu-container">
+                <div className="menu-bar" onMouseLeave={removeElement}>
+                    <ul onMouseOver={setElement} >
+                        <li data-name={TRAININGS} className={getClass(TRAININGS)}>
+                            Trainings
+                        </li>
+                        <li data-name={MEETUPS} className={getClass(MEETUPS)}>
+                            Meetups
+                        </li>
+                        <li data-name={WEBINARS} className={getClass(WEBINARS)}>
+                            Webinars
+                        </li>
+                        <li data-name={CONFERENCE} className={getClass(CONFERENCE)}>
+                            Conference
+                        </li>
+                        <li data-name={VIDEOS} className={getClass(VIDEOS)}>
+                            Videos
+                        </li>
+                        <li data-name={PSS} className={getClass(PSS)}>
+                            Pm Speaks Series
+                        </li>
+                        <li data-name={BLOGS} className={getClass(BLOGS)}>
+                            Blogs
+                        </li>
+                        <li data-name={PODCASTS} className={getClass(PODCASTS)}>
+                            Podcasts
+                        </li>
+                        <li data-name={BAS} className={getClass(BAS)}>
+                            Be A Speaker
+                        </li>
+                        <li data-name={BAV} className={getClass(BAV)}>
+                            Be A Volunteer
+                        </li>
+                        <li data-name={ABOUT} className={getClass(ABOUT)}>
+                            About Us
+                        </li>
+                    </ul>
+                    <ProjectionScreen hoveredListItem={hoveredListItemName} />
+                </div>
             </div>
-        </div>
+        </>
     )
 }
 
