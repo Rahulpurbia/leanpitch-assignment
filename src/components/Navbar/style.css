@@ -12,13 +12,14 @@
     cursor: pointer;
 }
 
-.navbar>.logo>img {
-    height: var(--navbar-height);
+.navbar>.logo,
+.logo>img {
+    height: 100%;
 }
 
 .btn {
-    height: 100%;
-    padding: 20px 30px;
+    height: var(--navbar-height);
+    padding-inline: 30px;
     font-size: 20px;
     font-weight: 600;
     color: white;
