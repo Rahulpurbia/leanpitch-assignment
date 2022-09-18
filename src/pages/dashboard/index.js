@@ -33,37 +33,37 @@ const Dashboard = () => {
                 <div className="menu-bar" onMouseLeave={removeElement}>
                     <ul onMouseOver={setElement} >
                         <li data-name={TRAININGS} className={getClass(TRAININGS)}>
-                            Trainings
+                            <span>Trainings</span>
                         </li>
                         <li data-name={MEETUPS} className={getClass(MEETUPS)}>
-                            Meetups
+                            <span>Meetups</span>
                         </li>
                         <li data-name={WEBINARS} className={getClass(WEBINARS)}>
-                            Webinars
+                            <span>Webinars</span>
                         </li>
                         <li data-name={CONFERENCE} className={getClass(CONFERENCE)}>
-                            Conference
+                            <span>Conference</span>
                         </li>
                         <li data-name={VIDEOS} className={getClass(VIDEOS)}>
-                            Videos
+                            <span>Videos</span>
                         </li>
                         <li data-name={PSS} className={getClass(PSS)}>
-                            Pm Speaks Series
+                            <span>Pm Speaks Series</span>
                         </li>
                         <li data-name={BLOGS} className={getClass(BLOGS)}>
-                            Blogs
+                            <span>Blogs</span>
                         </li>
                         <li data-name={PODCASTS} className={getClass(PODCASTS)}>
-                            Podcasts
+                            <span>Podcasts</span>
                         </li>
                         <li data-name={BAS} className={getClass(BAS)}>
-                            Be A Speaker
+                            <span>Be A Speaker</span>
                         </li>
                         <li data-name={BAV} className={getClass(BAV)}>
-                            Be A Volunteer
+                            <span>Be A Volunteer</span>
                         </li>
                         <li data-name={ABOUT} className={getClass(ABOUT)}>
-                            About Us
+                            <span>About Us</span>
                         </li>
                     </ul>
                     <ProjectionScreen hoveredListItem={hoveredListItemName} />
