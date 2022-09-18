@@ -3,9 +3,21 @@ import { useState } from "react"
 import Navbar from "../../components/Navbar";
 import ProjectionScreen from "../../components/ProjectionScreen"
 
+import TrainingContent from '../../components/ProjectionScreen/components/TrainingContent'
+import AboutUsContent from "../../components/ProjectionScreen/components/AboutUsContent";
+import BeASpeakerContent from "../../components/ProjectionScreen/components/BeASpeakerContent";
+import BeAVolunteerContent from "../../components/ProjectionScreen/components/BeAVolunteerContent";
+import BlogsContent from "../../components/ProjectionScreen/components/BlogsContent";
+import ConferenceContent from "../../components/ProjectionScreen/components/ConferenceContent";
+import MeetUpsContent from "../../components/ProjectionScreen/components/MeetUpsContent";
+import PmSpeaksSeriesContent from "../../components/ProjectionScreen/components/PmSpeaksSeriesContent";
+import PodcastContent from "../../components/ProjectionScreen/components/PodcastContent";
+import VideoContent from "../../components/ProjectionScreen/components/VideosContent";
+import WebinarContent from "../../components/ProjectionScreen/components/WebinarContent";
+
 import "./style.css"
 
-export const TRAININGS = 'trainings',
+const TRAININGS = 'trainings',
     MEETUPS = 'meetups',
     WEBINARS = 'webinars',
     CONFERENCE = 'conference',
@@ -25,6 +37,47 @@ const Dashboard = () => {
     const removeElement = () => setHoveredListItemName("")
 
     const getClass = (dataName) => dataName === hoveredListItemName ? 'hover' : ""
+
+    const getContent = () => {
+        switch (hoveredListItemName) {
+            case TRAININGS: {
+                return <TrainingContent />
+            }
+            case ABOUT: {
+                return <AboutUsContent />
+            }
+            case WEBINARS: {
+                return <WebinarContent />
+            }
+            case MEETUPS: {
+                return <MeetUpsContent />
+            }
+            case CONFERENCE: {
+                return <ConferenceContent />
+            }
+            case VIDEOS: {
+                return <VideoContent />
+            }
+            case PSS: {
+                return <PmSpeaksSeriesContent />
+            }
+            case PODCASTS: {
+                return <PodcastContent />
+            }
+            case BLOGS: {
+                return <BlogsContent />
+            }
+            case BAS: {
+                return <BeASpeakerContent />
+            }
+            case BAV: {
+                return <BeAVolunteerContent />
+            }
+            default: {
+                return ""
+            }
+        }
+    }
 
     return (
         <>
@@ -66,7 +119,7 @@ const Dashboard = () => {
                             <span>About Us</span>
                         </li>
                     </ul>
-                    <ProjectionScreen hoveredListItem={hoveredListItemName} />
+                    <ProjectionScreen content={getContent()} />
                 </div>
             </div>
         </>

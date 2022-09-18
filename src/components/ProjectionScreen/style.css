@@ -2,6 +2,7 @@
     height: 100%;
     width: 100%;
     border: 7px solid yellow;
+    padding: 20px;
 }
 
 .projection-wrapper {
