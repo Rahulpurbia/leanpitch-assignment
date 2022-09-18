@@ -1,15 +1,17 @@
 {
   "files": {
     "main.css": "/leanpitch-assignment/static/css/main.36bd68ac.css",
-    "main.js": "/leanpitch-assignment/static/js/main.acae26ee.js",
+    "main.js": "/leanpitch-assignment/static/js/main.5d1c45f6.js",
     "static/js/787.b979f81c.chunk.js": "/leanpitch-assignment/static/js/787.b979f81c.chunk.js",
+    "static/media/logo.jpg": "/leanpitch-assignment/static/media/logo.d2454769ccaea40a4cab.jpg",
+    "static/media/card-logo.svg": "/leanpitch-assignment/static/media/card-logo.2dac4855879d6415e9991fa40e94f27d.svg",
     "index.html": "/leanpitch-assignment/index.html",
     "main.36bd68ac.css.map": "/leanpitch-assignment/static/css/main.36bd68ac.css.map",
-    "main.acae26ee.js.map": "/leanpitch-assignment/static/js/main.acae26ee.js.map",
+    "main.5d1c45f6.js.map": "/leanpitch-assignment/static/js/main.5d1c45f6.js.map",
     "787.b979f81c.chunk.js.map": "/leanpitch-assignment/static/js/787.b979f81c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.36bd68ac.css",
-    "static/js/main.acae26ee.js"
+    "static/js/main.5d1c45f6.js"
   ]
 }
