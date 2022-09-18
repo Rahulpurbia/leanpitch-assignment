@@ -8,7 +8,7 @@
 
 .menu-bar {
     height: 90%;
-    width: 30%;
+    width: fit-content;
     position: relative;
 }
 
