@@ -34,3 +34,10 @@
 .contact-btn {
     background-color: transparent;
 }
+
+
+@media screen and (max-width:550px) {
+    .nav-buttons {
+        display: none;
+    }
+}

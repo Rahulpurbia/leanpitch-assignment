@@ -47,3 +47,10 @@
 .menu-bar:hover .projection-wrapper {
     display: block;
 }
+
+
+@media screen and (max-width:600px) {
+    .menu-bar>ul>li {
+        font-size: clamp(20px, 4.3vw, 25px);
+    }
+}
